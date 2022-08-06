@@ -11,7 +11,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       <FlatList
         data={ChatRoomsData}
         renderItem ={({item}) => <ChatRoomItem chatRoom={item} />}
-        // keyExtractor ={({data}) => item.id}
+        keyExtractor ={(item) => item.id}
        />
     </View>
   );
